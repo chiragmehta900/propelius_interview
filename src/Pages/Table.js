@@ -9,7 +9,6 @@ const Table = () => {
   const [sencondOprion, setSencondOprion] = React.useState(false)
   const [searchValue, setSearchValue] = React.useState(null)
 
-
   const onFilter = () => {
     setAddFilter(!addFilter)
     setTableData(borrowers)
