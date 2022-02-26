@@ -13,6 +13,7 @@ const Table = () => {
   const onFilter = () => {
     setAddFilter(!addFilter)
     setTableData(borrowers)
+    setSearchValue(null)
   }
 
   const onSelectedOption = (e) => {
