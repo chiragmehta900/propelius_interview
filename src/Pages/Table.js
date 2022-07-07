@@ -9,12 +9,14 @@ const Table = () => {
   const [sencondOprion, setSencondOprion] = React.useState(false)
   const [searchValue, setSearchValue] = React.useState(null)
 
+  //filter button
   const onFilter = () => {
     setAddFilter(!addFilter)
     setTableData(borrowers)
     setSearchValue(null)
   }
 
+  //select option action
   const onSelectedOption = (e) => {
     setSelectedOption(e.target.value)
     let numberAry = ['dateOfBirth', 'creditScore', 'w2Income', 'homePhone', 'cellPhone', 'startDate']
