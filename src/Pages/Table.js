@@ -3,6 +3,7 @@ import React from 'react'
 import borrowers from '../Data/borrowers.json'
 
 const Table = () => {
+  
   const [tableData, setTableData] = React.useState([])
   const [addFilter, setAddFilter] = React.useState(false)
   const [selectedOption, setSelectedOption] = React.useState("firstName")
